@@ -18,61 +18,64 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-            width="30"
-            height="30"
+      <!-- MENU -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              width="30"
+              height="30"
+            >
+              <rect width="512" height="512" rx="15%" fill="#001F3F" />
+              <path
+                fill="#FFF"
+                d="M256 32C141.12 32 48 125.12 48 240s93.12 208 208 208 208-93.12 208-208S370.88 32 256 32zm56 232a16 16 0 0 1-16 16H172a16 16 0 0 1-16-16v-40h160v40zM192 160a16 16 0 0 1 16-16h96a16 16 0 0 1 16 16v64a16 16 0 0 1-16 16h-96a16 16 0 0 1-16-16zm144 160H176a16 16 0 0 1-16-16v-32h160v32a16 16 0 0 1-16 16z"
+              />
+            </svg>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <rect width="512" height="512" rx="15%" fill="#001F3F" />
-            <path
-              fill="#FFF"
-              d="M256 32C141.12 32 48 125.12 48 240s93.12 208 208 208 208-93.12 208-208S370.88 32 256 32zm56 232a16 16 0 0 1-16 16H172a16 16 0 0 1-16-16v-40h160v40zM192 160a16 16 0 0 1 16-16h96a16 16 0 0 1 16 16v64a16 16 0 0 1-16 16h-96a16 16 0 0 1-16-16zm144 160H176a16 16 0 0 1-16-16v-32h160v32a16 16 0 0 1-16 16z"
-            />
-          </svg>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            <a class="nav-link" href="#">Depositos</a>
-            <a class="nav-link" href="#">Envios</a>
-            <a class="nav-link" href="#">Últimos Movimientos</a>
-            <!-- <a
-              class="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              ></a
-            > -->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="./menu.html">Inicio</a>
+              <a class="nav-link" href="./deposit.html">Depositos</a>
+              <a class="nav-link" href="./sendmoney.html">Envios</a>
+              <a class="nav-link" href="./transactions.html">Últimos Movimientos</a>
+              <!-- <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                ></a
+              > -->
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
   <div class="container d-flex flex-column w-100">
     <h2>Depositar</h2>
     <form>
       <div class="form-group">
         <label for="depositAmount">Monto a depositar:</label>
-        <input type="number" class="form-control" id="depositAmount" placeholder="Enter amount">
+        <input type="number" class="form-control" id="depositAmount" placeholder="Ingrese un monto">
       </div>
-      <button type="submit" class="btn btn-primary">Realizar depósito</button>
+      <button type="submit" class="btn btn-primary w-100 mt-3">Realizar depósito</button>
     </form>
-    <a href="menu.html" class="btn btn-secondary">Volver al Menú Principal</a>
+    <a href="menu.html" class="btn btn-secondary mt-3">Volver al Menú Principal</a>
   </div>
+
+  <!-- FOOTER -->
   <footer class="footer bg-light py-3">
     <div class="container">
       <div class="row align-items-center">

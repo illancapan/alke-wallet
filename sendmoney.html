@@ -18,9 +18,11 @@
     />
   </head>
   <body>
+    <!-- MENU -->
+    <!-- MENU -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="./index.html">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
@@ -47,10 +49,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            <a class="nav-link" href="#">Depositos</a>
-            <a class="nav-link" href="#">Envios</a>
-            <a class="nav-link" href="#">Últimos Movimientos</a>
+            <a class="nav-link active" aria-current="page" href="./menu.html">Inicio</a>
+            <a class="nav-link" href="./deposit.html">Depositos</a>
+            <a class="nav-link" href="./sendmoney.html">Envios</a>
+            <a class="nav-link" href="./transactions.html">Últimos Movimientos</a>
             <!-- <a
               class="nav-link disabled"
               href="#"
@@ -64,27 +66,31 @@
     </nav>
   <div class="container">
     <h2>Enviar Dinero</h2>
-    <form>
+    <form class="d-flex flex-column">
       <div class="form-group">
-        <label for="searchContact">Buscar en la agenda de transferencias:</label>
-        <input type="text" class="form-control" id="searchContact" placeholder="Search contact">
+        <label class="mb-3" for="searchContact">Buscar en la agenda de transferencias:</label>
+        <input type="text" class="form-control mb-3" id="searchContact" placeholder="Buscar contacto">
       </div>
-      <button type="submit" class="btn btn-primary">Agregar nuevo contacto</button>
+      <button type="submit" class="btn btn-primary mb-3">Agregar nuevo contacto</button>
  <h3>Contactos</h3>
-  <ul id="contactList" class="list-group">
+  <ul id="contactList" class="list-group mb-3 d-flex flex-column">
     <li class="list-group-item">
-      <div class="contact-info">
+      <div class="contact-info d-flex flex-column">
         <span class="contact-name">John Doe</span>
-        <span class="contact-details">CBU: 123456789, Alias: john.doe, Banco: ABC Bank</span>
+        <span class="contact-details">CBU: 123456789</span>
+        <span class="contact-details">Alias: john.doe</span>
+        <span class="contact-details"> Banco: ABC Bank</span>
       </div>
     </li>
-    <li class="list-group-item">
-      <div class="contact-info">
+    <li class="list-group-item mb-3">
+      <div class="contact-info d-flex flex-column"">
         <span class="contact-name">Jane Smith</span>
-        <span class="contact-details">CBU: 987654321, Alias: jane.smith, Banco: XYZ Bank</span>
+        <span class="contact-details">CBU: 987654321</span>
+        <span class="contact-details">Alias: jane.smith</span>
+        <span class="contact-details">Banco: XYZ Bank</span>
       </div>
     </li>
-      <button type="submit" class="btn btn-primary">Enviar dinero</button>
+      <button type="submit" class="btn btn-primary mb-3">Enviar dinero</button>
     </form>
     <a href="menu.html" class="btn btn-secondary">Volver al Menú Principal</a>
   </div>
